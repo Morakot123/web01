@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#button1").click(function(){
+                    $("div").animate({left:'500px'});
+                    });
+                $("#button2").click(function(){
+                    $("div").animate({
+                        left:'100px', top:'100px', opacity:'0.5', height:'150px', width:'150px'
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="button1">Start Animation</button>
+        <button id="button2">Animation Multiple Properties</button>
+            <div style="background:#98bf21;height:100px;width:100px;position:absolute;">
+            </div>
+    </body>
+</html>
